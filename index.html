@@ -75,22 +75,22 @@
         }
         .parallax > use:nth-child(1) {
             animation-delay: -2s;
-            animation-duration: 7s;
+            animation-duration: 20s; /* Slower: was 7s */
             fill: rgba(30, 58, 138, 0.7);
         }
         .parallax > use:nth-child(2) {
             animation-delay: -3s;
-            animation-duration: 10s;
+            animation-duration: 25s; /* Slower: was 10s */
             fill: rgba(30, 64, 175, 0.5);
         }
         .parallax > use:nth-child(3) {
             animation-delay: -4s;
-            animation-duration: 13s;
+            animation-duration: 30s; /* Slower: was 13s */
             fill: rgba(59, 130, 246, 0.3);
         }
         .parallax > use:nth-child(4) {
             animation-delay: -5s;
-            animation-duration: 20s;
+            animation-duration: 38s; /* Slower: was 20s */
             fill: #0a101f; 
         }
 
@@ -102,7 +102,7 @@
         /* Boat animation */
         .boat-container {
             position: absolute;
-            bottom: 12vh;
+            bottom: 10vh; /* Adjusted from 12vh */
             left: 50%;
             width: 80px;
             height: 80px;
@@ -215,7 +215,6 @@
             <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6 text-left"><div class="glass-card p-6 rounded-lg">시니어의 이야기는 디지털 자산으로 남아 세대와 사회에 전해집니다.</div><div class="glass-card p-6 rounded-lg">기억은 AI 챗봇으로 변환되어 누구나 대화하며 상호작용할 수 있습니다.</div><div class="glass-card p-6 rounded-lg">청년은 현실적인 고민을 해결할 실마리를 얻을 수 있습니다.</div><div class="glass-card p-6 rounded-lg">더 깊은 질문은 1:1 연결 서비스로 이어져 직접 소통할 수 있습니다.</div></div>
             <p class="mt-12 text-xl font-semibold text-blue-300">👉 Memocean은 시니어의 경험을 자산화하고, 그 자산을 통해 현실적 문제를 해결하는 플랫폼입니다.</p>
         </div>
-        <div class="waves-container"><svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0" /><use xlink:href="#gentle-wave" x="48" y="3" /><use xlink:href="#gentle-wave" x="48" y="5" /><use xlink:href="#gentle-wave" x="48" y="7" /></g></svg></div>
     </section>
 
     <!-- Section 4: Features -->
@@ -224,11 +223,11 @@
             <div class="text-center mb-16"><h2 class="text-4xl md:text-5xl font-bold font-serif-kr">기록자와 탐험가를 위한<br>Memocean의 핵심 기능</h2></div>
             <div class="grid md:grid-cols-2 gap-16">
                 <div><h3 class="text-3xl font-bold font-serif-kr mb-8 text-blue-300 text-center">기록자 (Provider)</h3><div class="space-y-8"><div class="flex items-start gap-6"><div class="flex-shrink-0 w-12 h-12 rounded-lg bg-slate-800 flex items-center justify-center text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg></div><div><h4 class="text-xl font-bold mb-2">AI 인터뷰 기반 자서전 작성</h4><p class="text-gray-400">질문에 답하는 것만으로도 당신만의 자서전을 완성할 수 있습니다.</p><p class="mt-2 text-blue-400 font-semibold">→ 당신이 살아온 모든 순간이 살아있는 디지털 유산이 됩니다.</p></div></div><div class="flex items-start gap-6"><div class="flex-shrink-0 w-12 h-12 rounded-lg bg-slate-800 flex items-center justify-center text-blue-400">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-                      <path d="M8.433 7.418c.158-.103.346-.195.574-.277a6.213 6.213 0 014.226 0c.228.082.416.174.574.277a1 1 0 01.52.878v1.41a1 1 0 01-.52.878c-.158.103-.346.195-.574.277a6.213 6.213 0 01-4.226 0c-.228-.082-.416-.174-.574-.277a1 1 0 01-.52-.878v-1.41a1 1 0 01.52-.878z" />
-                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z" clip-rule="evenodd" />
-                    </svg>
-                </div><div><h4 class="text-xl font-bold mb-2">지혜가 만드는 가치</h4><p class="text-gray-400">자서전이 후배들에게 영감을 줄 때마다 수익 일부가 정산됩니다.</p><p class="mt-2 text-blue-400 font-semibold">→ 사회적 기여와 경제적 보상을 동시에 얻습니다.</p></div></div></div></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                          <path d="M8.433 7.418c.158-.103.346-.195.574-.277a6.213 6.213 0 014.226 0c.228.082.416.174.574.277a1 1 0 01.52.878v1.41a1 1 0 01-.52.878c-.158.103-.346.195-.574.277a6.213 6.213 0 01-4.226 0c-.228-.082-.416-.174-.574-.277a1 1 0 01-.52-.878v-1.41a1 1 0 01.52-.878z" />
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 2a10 10 0 100-20 10 10 0 000 20z" clip-rule="evenodd" />
+                        </svg>
+                    </div><div><h4 class="text-xl font-bold mb-2">지혜가 만드는 가치</h4><p class="text-gray-400">자서전이 후배들에게 영감을 줄 때마다 수익 일부가 정산됩니다.</p><p class="mt-2 text-blue-400 font-semibold">→ 사회적 기여와 경제적 보상을 동시에 얻습니다.</p></div></div></div></div>
                 <div><h3 class="text-3xl font-bold font-serif-kr mb-8 text-green-300 text-center">탐험가 (User)</h3><div class="space-y-8"><div class="flex items-start gap-6"><div class="flex-shrink-0 w-12 h-12 rounded-lg bg-slate-800 flex items-center justify-center text-green-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg></div><div><h4 class="text-xl font-bold mb-2">내 질문에 답하는 AI 챗봇</h4><p class="text-gray-400">자서전 데이터베이스를 기반으로, 지금 필요한 답을 대화로 찾습니다.</p><p class="mt-2 text-green-400 font-semibold">→ 검색으로는 얻을 수 없는 경험 기반 해법을 얻습니다.</p></div></div><div class="flex items-start gap-6"><div class="flex-shrink-0 w-12 h-12 rounded-lg bg-slate-800 flex items-center justify-center text-green-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7" /></svg></div><div><h4 class="text-xl font-bold mb-2">1:1 심층 연결 서비스</h4><p class="text-gray-400">챗봇으로 부족하다면, 직접 경험자에게 질문할 수 있습니다.</p><p class="mt-2 text-green-400 font-semibold">→ 나만을 위한 맞춤형 이정표를 발견합니다.</p></div></div></div></div>
             </div>
         </div>
@@ -249,7 +248,6 @@
             <div class="grid md:grid-cols-3 gap-8"><div class="glass-card p-8 rounded-2xl"><h3 class="text-xl font-bold mb-3 font-serif-kr">단순 기록이 아닌 ‘대화형 자서전’</h3><p class="text-gray-400">기록이 곧 챗봇이 됩니다. 언제든 질문하고 대화하며, 살아있는 지혜를 얻을 수 있습니다.</p></div><div class="glass-card p-8 rounded-2xl border-blue-500 border-2"><h3 class="text-xl font-bold mb-3 font-serif-kr text-blue-300">경험의 선순환 구조</h3><p class="text-gray-400">한 세대의 자서전이 다음 세대의 이정표가 되고, 그 성장이 다시 새로운 기록으로 이어집니다.</p></div><div class="glass-card p-8 rounded-2xl"><h3 class="text-xl font-bold mb-3 font-serif-kr">정보가 아닌 삶의 맥락</h3><p class="text-gray-400">파편적인 조언이 아니라, 인생 전체에서 나온 통찰을 제공합니다. 성공과 실패의 과정까지 배웁니다.</p></div></div>
             <p class="mt-12 text-2xl font-semibold text-white">👉 Memocean은 단순한 플랫폼이 아니라, 세대를 잇는 최초의 ‘경험 네트워크’입니다.</p>
         </div>
-        <div class="waves-container"><svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0" /><use xlink:href="#gentle-wave" x="48" y="3" /><use xlink:href="#gentle-wave" x="48" y="5" /><use xlink:href="#gentle-wave" x="48" y="7" /></g></svg></div>
     </section>
 
     <!-- Section 6: Testimonials -->
@@ -324,5 +322,3 @@
     </script>
 </body>
 </html>
-
-
