@@ -7,19 +7,22 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- 폰트 변경: Noto Serif/Sans KR -> Lora/Nanum Myeongjo/IBM Plex Sans KR 로 변경 -->
+    <!-- 폰트: Lora(영문), Nanum Myeongjo(한글 세리프), IBM Plex Sans KR(본문) -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Nanum+Myeongjo:wght@400;700;800&family=IBM+Plex+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* 폰트 변경: 기본 폰트를 'IBM Plex Sans KR'로 수정 */
+        /* 기본 본문: IBM Plex Sans KR */
         body {
             font-family: 'IBM Plex Sans KR', sans-serif;
             background-color: #0a101f; /* 깊은 밤바다 색 */
             color: #e0e0e0;
         }
-        /* 폰트 변경: 세리프 폰트를 'Lora'와 '나눔명조'로 수정 (영문 우선, 한글은 나눔명조) */
+
+        /* 헤드라인: Lora(영문) + Nanum Myeongjo(한글) */
         .font-serif-kr {
             font-family: 'Lora', 'Nanum Myeongjo', serif;
         }
+
+        /* CTA 버튼 */
         .cta-button {
             transition: all 0.3s ease;
         }
@@ -27,12 +30,16 @@
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
+
+        /* Glassmorphism 카드 */
         .glass-card {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
+
+        /* Section Glow 효과 */
         .section-glow {
             position: relative;
         }
@@ -48,20 +55,27 @@
             z-index: 0;
             pointer-events: none;
         }
+
+        /* 후기 카드 */
         .testimonial-card {
             background: linear-gradient(145deg, #1e293b, #0f172a);
             border: 1px solid #334155;
         }
+
+        /* FAQ */
         .faq-item {
             border-bottom: 1px solid #334155;
         }
+
+        /* 배경 */
         .sunrise-bg {
-            background: linear-gradient(to top, #0a101f, transparent), url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?q=80&w=2670&auto-format&fit=crop');
+            background: linear-gradient(to top, #0a101f, transparent), 
+                        url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?q=80&w=2670&auto-format&fit=crop');
             background-size: cover;
             background-position: center;
         }
 
-        /* Wave animation */
+        /* Wave 애니메이션 */
         .waves-container {
             position: absolute;
             bottom: 0;
@@ -72,30 +86,13 @@
             max-height: 250px;
             pointer-events: none;
         }
-
         .parallax > use {
             animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
         }
-        .parallax > use:nth-child(1) {
-            animation-delay: -2s;
-            animation-duration: 7s;
-            fill: rgba(30, 58, 138, 0.7);
-        }
-        .parallax > use:nth-child(2) {
-            animation-delay: -3s;
-            animation-duration: 10s;
-            fill: rgba(30, 64, 175, 0.5);
-        }
-        .parallax > use:nth-child(3) {
-            animation-delay: -4s;
-            animation-duration: 13s;
-            fill: rgba(59, 130, 246, 0.3);
-        }
-        .parallax > use:nth-child(4) {
-            animation-delay: -5s;
-            animation-duration: 20s;
-            fill: #0a101f; 
-        }
+        .parallax > use:nth-child(1) { animation-delay: -2s; animation-duration: 7s; fill: rgba(30, 58, 138, 0.7); }
+        .parallax > use:nth-child(2) { animation-delay: -3s; animation-duration: 10s; fill: rgba(30, 64, 175, 0.5); }
+        .parallax > use:nth-child(3) { animation-delay: -4s; animation-duration: 13s; fill: rgba(59, 130, 246, 0.3); }
+        .parallax > use:nth-child(4) { animation-delay: -5s; animation-duration: 20s; fill: #0a101f; }
 
         @keyframes move-forever {
             0% { transform: translate3d(-90px,0,0); }
@@ -113,20 +110,17 @@
             animation: boat-rock 15s ease-in-out infinite;
             pointer-events: none;
         }
-
         .sailing-boat {
             width: 100%;
             height: 100%;
             animation: boat-bob 5s ease-in-out infinite;
             transform-origin: bottom center;
         }
-
         @keyframes boat-rock {
             0%   { transform: translateX(-150px) rotate(-5deg); }
             50%  { transform: translateX(150px) rotate(5deg); }
             100% { transform: translateX(-150px) rotate(-5deg); }
         }
-
         @keyframes boat-bob {
             0%   { transform: translateY(0px) rotate(2deg); }
             50%  { transform: translateY(-8px) rotate(-2deg); }
@@ -327,6 +321,7 @@
     </script>
 </body>
 </html>
+
 
 
 
